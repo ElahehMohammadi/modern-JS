@@ -1,1 +1,5 @@
-// 04 - 10:00:00
+// importing module
+import { addToCard } from "./shoppingCard.js";
+console.log("importing module");
+
+// addToCard("bread", 5);
