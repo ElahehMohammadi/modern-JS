@@ -44,7 +44,7 @@ const lastPost = getLastPost();
 
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
-*/
+
 const shoppingcart2 = (function () {
   const cart = [];
   const shippingCost = 10;
@@ -68,3 +68,4 @@ const shoppingcart2 = (function () {
   };
 })();
 shoppingcart2.addToCard("appeles", 2);
+*/
