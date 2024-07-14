@@ -1,12 +1,12 @@
 var budget = [
-  { value: 250, description: 'Sold old TV 📺', user: 'jonas' },
-  { value: -45, description: 'Groceries 🥑', user: 'jonas' },
-  { value: 3500, description: 'Monthly salary 👩‍💻', user: 'jonas' },
-  { value: 300, description: 'Freelancing 👩‍💻', user: 'jonas' },
-  { value: -1100, description: 'New iPhone 📱', user: 'jonas' },
-  { value: -20, description: 'Candy 🍭', user: 'matilda' },
-  { value: -125, description: 'Toys 🚂', user: 'matilda' },
-  { value: -1800, description: 'New Laptop 💻', user: 'jonas' },
+  { value: 250, description: "Sold old TV 📺", user: "jonas" },
+  { value: -45, description: "Groceries 🥑", user: "jonas" },
+  { value: 3500, description: "Monthly salary 👩‍💻", user: "jonas" },
+  { value: 300, description: "Freelancing 👩‍💻", user: "jonas" },
+  { value: -1100, description: "New iPhone 📱", user: "jonas" },
+  { value: -20, description: "Candy 🍭", user: "matilda" },
+  { value: -125, description: "Toys 🚂", user: "matilda" },
+  { value: -1800, description: "New Laptop 💻", user: "jonas" },
 ];
 
 var limits = {
@@ -15,7 +15,7 @@ var limits = {
 };
 
 var add = function (value, description, user) {
-  if (!user) user = 'jonas';
+  if (!user) user = "jonas";
   user = user.toLowerCase();
 
   var lim;
@@ -29,9 +29,9 @@ var add = function (value, description, user) {
     budget.push({ value: -value, description: description, user: user });
   }
 };
-add(10, 'Pizza 🍕');
-add(100, 'Going to movies 🍿', 'Matilda');
-add(200, 'Stuff', 'Jay');
+add(10, "Pizza 🍕");
+add(100, "Going to movies 🍿", "Matilda");
+add(200, "Stuff", "Jay");
 console.log(budget);
 
 var check = function () {
@@ -44,7 +44,7 @@ var check = function () {
     }
 
     if (el.value < -lim) {
-      el.flag = 'limit';
+      el.flag = "limit";
     }
   }
 };
@@ -53,10 +53,10 @@ check();
 console.log(budget);
 
 var bigExpenses = function (limit) {
-  var output = '';
+  var output = "";
   for (var el of budget) {
     if (el.value <= -limit) {
-      output += el.description.slice(-2) + ' / '; // Emojis are 2 chars
+      output += el.description.slice(-2) + " / "; // Emojis are 2 chars
     }
   }
   output = output.slice(0, -2); // Remove last '/ '
