@@ -8,8 +8,7 @@ This repository contains modules and configurations for converting ES6 code to E
 - [Setup](#setup)
 - [File Structure](#file-structure)
 - [Functional Programming](#functional-programming)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -21,8 +20,8 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/project-name.git
-    cd project-name
+    git clone https://github.com/ElahehMohammadi/modern-JS.git
+    cd modern-JS
     ```
 
 2. Install dependencies:
