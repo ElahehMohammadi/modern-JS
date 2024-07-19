@@ -6,7 +6,6 @@ This repository contains modules and configurations for converting ES6 code to E
 
 - [Introduction](#introduction)
 - [Setup](#setup)
-- [Usage](#usage)
 - [File Structure](#file-structure)
 - [Functional Programming](#functional-programming)
 - [Contributing](#contributing)
@@ -31,12 +30,6 @@ To set up the project, follow these steps:
     npm install
     ```
 
-## Usage
-
-To build the project using Parcel:
-```bash
-npm run build
-```
 
 ## File Structure
 
